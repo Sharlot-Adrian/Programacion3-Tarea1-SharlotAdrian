@@ -31,8 +31,33 @@ public class Tarea1 {
             switch(opcion){
 
                 case 1:{
-                    System.out.println("Calculadora basica");
-                    break;
+
+                     int subOpcion = 0;
+                     double primerNum = 0; 
+                     double segundoNum = 0;
+                     double resultado = 0;
+
+                     System.out.println("------------------------");
+                     System.out.println("|   Calculadora basica   |");
+                     System.out.println("|------------------------|");
+                     System.out.println("|1. Suma                 |");
+                     System.out.println("|2. Resta                |");
+                     System.out.println("|3. Multiplicacion       |");
+                     System.out.println("|4. Division             |");
+                     System.out.println("--------------------------");
+                     System.out.println("\nQue operacion va a realizar con la calculadora basica? ");
+
+                     subOpcion = scanner.nextInt();
+
+                     primerNum = scanner.nextInt();
+                     segundoNum = scanner.nextInt();
+
+                     Calculadora calculadora = new Calculadora(primerNum,segundoNum);
+                    
+
+
+
+                     break;
                 }
                 case 2:{
                     System.out.println("Numero par o impar");
