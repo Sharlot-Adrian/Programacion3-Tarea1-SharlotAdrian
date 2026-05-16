@@ -128,7 +128,15 @@ public class Tarea1 {
                     break;
                 }
                 case 3:{
-                    System.out.println("Tabla de multiplicar");
+                    System.out.println("\n[ Tabla de multiplicar ]");
+                    System.out.println("*----------------------------------*");
+                    System.out.println("Ingrese el numero cuyas tablas de multiplicacion quiere visualizar: ");
+                    int numero = scanner.nextInt();
+
+                    Multiplicacion tablas = new Multiplicacion(numero);
+                    System.out.println("TABLAS DE MULTIPLICACION DEL NUMERO #" + numero+":" );
+                    tablas.tablasHasta10();
+                    System.out.println("*----------------------------------*");
                     break;
                 }
                 case 4:{
