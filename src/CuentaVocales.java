@@ -22,7 +22,7 @@ public class CuentaVocales {
 
     }
 
-    public void mostarMenu(){
+    public void mostrarMenu(){
 
         System.out.println("\n [CONTAR VOCALES]");
         System.out.println("*----------------------------------*");

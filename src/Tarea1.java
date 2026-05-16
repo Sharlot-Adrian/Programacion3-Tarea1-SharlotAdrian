@@ -48,7 +48,7 @@ public class Tarea1 {
                 }
                 case 4:{
                     CuentaVocales cv = new CuentaVocales();
-                    cv.mostarMenu();
+                    cv.mostrarMenu();
                     break;
                 }
                 case 5:{
