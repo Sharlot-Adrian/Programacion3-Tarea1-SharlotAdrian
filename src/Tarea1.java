@@ -134,9 +134,9 @@ public class Tarea1 {
                     int numero = scanner.nextInt();
 
                     Multiplicacion tablas = new Multiplicacion(numero);
-                    System.out.println("TABLAS DE MULTIPLICACION DEL NUMERO #" + numero+":" );
+                    System.out.println("TABLA DE MULTIPLICACION DEL NUMERO #" + numero+":" );
                     tablas.tablasHasta10();
-                    System.out.println("*----------------------------------*");
+                    System.out.println("\n\n*----------------------------------*");
                     break;
                 }
                 case 4:{

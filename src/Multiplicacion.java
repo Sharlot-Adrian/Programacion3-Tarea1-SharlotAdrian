@@ -11,7 +11,7 @@ public class Multiplicacion {
         System.out.println("");
 
         for (int i = 1; i <=10; i++){
-            System.out.printf("%d * %d = %d", i, this.numero, i * this.numero);
+            System.out.printf("\n%d * %d = %d", i, this.numero, i * this.numero);
         }
     }
 }
