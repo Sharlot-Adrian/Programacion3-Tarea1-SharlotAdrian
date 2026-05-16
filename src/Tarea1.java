@@ -51,8 +51,9 @@ public class Tarea1 {
 
                          subOpcion = scanner.nextInt();
                          Calculadora calculadora = new Calculadora();
-                         switch(subOpcion){
 
+                         switch(subOpcion){
+                        
                             case 1:{
                                 System.out.println("\nIngrese el primer numero: ");
                                 primerNum = scanner.nextDouble();
@@ -65,15 +66,37 @@ public class Tarea1 {
                             }
                             case 2:{
                                 System.out.println("\nIngrese el primer numero: ");
+                                primerNum = scanner.nextDouble();
+                                System.out.println("\nIngrese el segundo numero: ");
+                                segundoNum = scanner.nextDouble();
+
+                                System.out.println("La RESTA es igual a:");
+                                System.out.println(calculadora.resta(primerNum,segundoNum));
                                 break;
                             }
                             case 3:{
+                                 System.out.println("\nIngrese el primer numero: ");
+                                primerNum = scanner.nextDouble();
+                                System.out.println("\nIngrese el segundo numero: ");
+                                segundoNum = scanner.nextDouble();
+
+                                System.out.println("La MULTIPLICACION es igual a:");
+                                System.out.println(calculadora.multiplicacion(primerNum,segundoNum));
                                 break;
                             }
                             case 4:{
+
+                                System.out.println("\nIngrese el primer numero: ");
+                                primerNum = scanner.nextDouble();
+                                System.out.println("\nIngrese el segundo numero: ");
+                                segundoNum = scanner.nextDouble();
+
+                                System.out.println("La DIVISION es igual a:");
+                                System.out.println(calculadora.division(primerNum,segundoNum));
                                 break;
                             }
                             case 5:{
+                                System.out.println("Saliendo...");
                                 break;
                             }
                             default: {
