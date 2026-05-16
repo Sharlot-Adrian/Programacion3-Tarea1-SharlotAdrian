@@ -44,6 +44,7 @@ public class Tarea1 {
                      System.out.println("|2. Resta                |");
                      System.out.println("|3. Multiplicacion       |");
                      System.out.println("|4. Division             |");
+                     System.out.println("|5. Salir                |");
                      System.out.println("--------------------------");
                      System.out.println("\nQue operacion va a realizar con la calculadora basica? ");
 
@@ -53,10 +54,38 @@ public class Tarea1 {
                      segundoNum = scanner.nextInt();
 
                      Calculadora calculadora = new Calculadora(primerNum,segundoNum);
-                    
 
+                     do{
 
+                        subOpcion = scanner.nextInt();
+                        switch(subOpcion){
 
+                            case 1:{
+                                System.out.println("La SUMA es igual a: ");
+                                System.out.println(calculadora.suma());
+                                break;
+                            }
+                            case 2:{
+                                break;
+                            }
+                            case 3:{
+                                break;
+                            }
+                            case 4:{
+                                break;
+                            }
+                            case 5:{
+                                break;
+                            }
+                            default: {
+                                System.out.println("Esa opcion no es valida.");
+                                break;
+                            }
+
+                        }
+
+                     }while(opcion != 5);
+         
                      break;
                 }
                 case 2:{
