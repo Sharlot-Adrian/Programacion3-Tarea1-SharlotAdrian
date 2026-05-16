@@ -35,37 +35,36 @@ public class Tarea1 {
                      int subOpcion = 0;
                      double primerNum = 0; 
                      double segundoNum = 0;
-                     double resultado = 0;
-
-                     System.out.println("------------------------");
-                     System.out.println("|   Calculadora basica   |");
-                     System.out.println("|------------------------|");
-                     System.out.println("|1. Suma                 |");
-                     System.out.println("|2. Resta                |");
-                     System.out.println("|3. Multiplicacion       |");
-                     System.out.println("|4. Division             |");
-                     System.out.println("|5. Salir                |");
-                     System.out.println("--------------------------");
-                     System.out.println("\nQue operacion va a realizar con la calculadora basica? ");
-
-                     subOpcion = scanner.nextInt();
-
-                     primerNum = scanner.nextInt();
-                     segundoNum = scanner.nextInt();
-
-                     Calculadora calculadora = new Calculadora(primerNum,segundoNum);
-
+                    
                      do{
 
-                        subOpcion = scanner.nextInt();
-                        switch(subOpcion){
+                         System.out.println("------------------------");
+                         System.out.println("|   Calculadora basica   |");
+                         System.out.println("|------------------------|");
+                         System.out.println("|1. Suma                 |");
+                         System.out.println("|2. Resta                |");
+                         System.out.println("|3. Multiplicacion       |");
+                         System.out.println("|4. Division             |");
+                         System.out.println("|5. Salir                |");
+                         System.out.println("--------------------------");
+                         System.out.println("\nQue operacion va a realizar con la calculadora basica? ");
+
+                         subOpcion = scanner.nextInt();
+                         Calculadora calculadora = new Calculadora();
+                         switch(subOpcion){
 
                             case 1:{
+                                System.out.println("\nIngrese el primer numero: ");
+                                primerNum = scanner.nextDouble();
+                                System.out.println("\nIngrese el segundo numero: ");
+                                segundoNum = scanner.nextDouble();
+
                                 System.out.println("La SUMA es igual a: ");
-                                System.out.println(calculadora.suma());
+                                System.out.println(calculadora.suma(primerNum,segundoNum));
                                 break;
                             }
                             case 2:{
+                                System.out.println("\nIngrese el primer numero: ");
                                 break;
                             }
                             case 3:{
@@ -84,7 +83,7 @@ public class Tarea1 {
 
                         }
 
-                     }while(opcion != 5);
+                     }while(subOpcion != 5);
          
                      break;
                 }
