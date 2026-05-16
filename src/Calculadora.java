@@ -1,15 +1,5 @@
 public class Calculadora {
 
-    private double primerNumero;
-    private double segundoNumero;
-
-    public Calculadora(){
-
-        this.primerNumero = 0;
-        this.segundoNumero = 0;
-
-    }
-
     public double suma(double primerNum, double segundoNum){
         return primerNum + segundoNum;
     }
