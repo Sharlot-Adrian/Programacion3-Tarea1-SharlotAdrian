@@ -48,11 +48,14 @@ public class Calculadora {
 
                          if (subOpcion != 5){
 
-                            System.out.println("\nIngrese el primer numero: ");
+                            System.out.println("\n-[CALCULADORA BASICA]-");
+                            System.out.println("*----------------------------------*");
+                            System.out.println("Ingrese el primer numero: ");
                             primerNum = scanner1.nextDouble();
 
                             System.out.println("\nIngrese el segundo numero: ");
                             segundoNum = scanner1.nextDouble();
+                            System.out.println("*----------------------------------*");
                          }
 
                          switch(subOpcion){
@@ -61,32 +64,38 @@ public class Calculadora {
 
                                 System.out.println("La SUMA es igual a: ");
                                 System.out.println(calculadora.suma(primerNum,segundoNum));
+                                System.out.println("*----------------------------------*");
                                 break;
                             }
                             case 2:{
                                
                                 System.out.println("La RESTA es igual a:");
                                 System.out.println(calculadora.resta(primerNum,segundoNum));
+                                System.out.println("*----------------------------------*");
                                 break;
                             }
                             case 3:{
                                 
                                 System.out.println("La MULTIPLICACION es igual a:");
                                 System.out.println(calculadora.multiplicacion(primerNum,segundoNum));
+                                System.out.println("*----------------------------------*");
                                 break;
                             }
                             case 4:{
 
                                 System.out.println("La DIVISION es igual a:");
                                 System.out.println(calculadora.division(primerNum,segundoNum));
+                                System.out.println("*----------------------------------*");
                                 break;
                             }
                             case 5:{
                                 System.out.println("Saliendo...");
+                                System.out.println("*----------------------------------*");
                                 break;
                             }
                             default: {
                                 System.out.println("Esa opcion no es valida.");
+                                System.out.println("*----------------------------------*");
                                 break;
                             }
 
