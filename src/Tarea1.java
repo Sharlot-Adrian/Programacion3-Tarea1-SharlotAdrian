@@ -37,19 +37,8 @@ public class Tarea1 {
                      break;
                 }
                 case 2:{
-                    System.out.println("\n[ Numero par o impar ]");
-                    System.out.println("*----------------------------------*");
-                    System.out.println("Ingrese un numero: ");
-                    int numero = scanner.nextInt();
-
-                    ParOImpar ParO_Impar = new ParOImpar(numero);
-
-                    if (ParO_Impar.EsPar())
-                        System.out.println("\nEl numero " + numero + " es par.");
-                    else
-                        System.out.println("\nEl numero " + numero + " NO es par.");
-
-                    System.out.println("*----------------------------------*");
+                    ParOImpar determinandoPar = new ParOImpar();
+                    determinandoPar.mostrarMenu();
                     break;
                 }
                 case 3:{

@@ -1,11 +1,25 @@
-public class ParOImpar {
-    private int numero;
+import java.util.Scanner;
 
-    public ParOImpar(int numero){
-        this.numero = numero;
+public class ParOImpar {
+   
+    Scanner scanner = new Scanner(System.in);
+
+    private boolean EsPar(int numero){
+        return (numero % 2 == 0? true : false);
     }
 
-    public boolean EsPar(){
-        return (this.numero % 2 == 0? true : false);
+    public void mostrarMenu(){
+        System.out.println("\n[ Numero par o impar ]");
+                    System.out.println("*----------------------------------*");
+                    System.out.println("Ingrese un numero: ");
+                    int numero = scanner.nextInt();
+
+                    if (EsPar(numero))
+                        System.out.println("\nEl numero " + numero + " es par.");
+                    else
+                        System.out.println("\nEl numero " + numero + " NO es par.");
+
+                    System.out.println("*----------------------------------*");
+
     }
 }
