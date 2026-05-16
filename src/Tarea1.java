@@ -32,9 +32,9 @@ public class Tarea1 {
 
                 case 1:{
 
-                     Calculadora calc = new Calculadora();
-                     calc.mostrarSubmenu();
-                     break;
+                    Calculadora calc = new Calculadora();
+                    calc.mostrarSubmenu();
+                    break;
                 }
                 case 2:{
                     ParOImpar determinandoPar = new ParOImpar();
@@ -53,6 +53,8 @@ public class Tarea1 {
                 }
                 case 5:{
                     System.out.println("Promedio de notas");
+                    PromedioNotas promNotas = new PromedioNotas();
+                    promNotas.mostrarMenu();
                     break;
                 }
                 case 6:{
@@ -68,7 +70,8 @@ public class Tarea1 {
                     break;
                 }
                 case 9:{
-                    System.out.println("Matriz 3x3");
+                    CreadorMatrices creadorM = new CreadorMatrices();
+                    creadorM.mostrarMenu();
                     break;
                 }
                 case 10:{

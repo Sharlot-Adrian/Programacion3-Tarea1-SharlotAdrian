@@ -12,7 +12,7 @@ public class PromedioNotas {
     
         for (int i = 0; i < cantidadNotasPublicadas; i++ ){
 
-            System.out.printf("Ingrese su nota #%d", i + 1);
+            System.out.printf("Ingrese su nota #%d: ", i + 1);
             nota = scanner.nextInt();
             sumatoria += nota;
 
@@ -35,4 +35,6 @@ public class PromedioNotas {
         System.out.println("*----------------------------------*");
 
     }
+
+    
 }
