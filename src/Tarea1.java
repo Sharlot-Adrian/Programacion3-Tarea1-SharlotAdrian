@@ -9,7 +9,6 @@ public class Tarea1 {
 
         do {
 
-            
             System.out.println("\n------------------------------------------");
             System.out.println("|                 Menu                    |");
             System.out.println("|-----------------------------------------|");
@@ -33,82 +32,8 @@ public class Tarea1 {
 
                 case 1:{
 
-                     int subOpcion = 0;
-                     double primerNum = 0; 
-                     double segundoNum = 0;
-                    
-                     do{
-
-                         System.out.println("------------------------");
-                         System.out.println("|   Calculadora basica   |");
-                         System.out.println("|------------------------|");
-                         System.out.println("|1. Suma                 |");
-                         System.out.println("|2. Resta                |");
-                         System.out.println("|3. Multiplicacion       |");
-                         System.out.println("|4. Division             |");
-                         System.out.println("|5. Salir                |");
-                         System.out.println("--------------------------");
-                         System.out.println("\nQue operacion va a realizar con la calculadora basica? ");
-
-                         subOpcion = scanner.nextInt();
-                         Calculadora calculadora = new Calculadora();
-
-                         switch(subOpcion){
-                        
-                            case 1:{
-                                System.out.println("\nIngrese el primer numero: ");
-                                primerNum = scanner.nextDouble();
-                                System.out.println("\nIngrese el segundo numero: ");
-                                segundoNum = scanner.nextDouble();
-
-                                System.out.println("La SUMA es igual a: ");
-                                System.out.println(calculadora.suma(primerNum,segundoNum));
-                                break;
-                            }
-                            case 2:{
-                                System.out.println("\nIngrese el primer numero: ");
-                                primerNum = scanner.nextDouble();
-                                System.out.println("\nIngrese el segundo numero: ");
-                                segundoNum = scanner.nextDouble();
-
-                                System.out.println("La RESTA es igual a:");
-                                System.out.println(calculadora.resta(primerNum,segundoNum));
-                                break;
-                            }
-                            case 3:{
-                                 System.out.println("\nIngrese el primer numero: ");
-                                primerNum = scanner.nextDouble();
-                                System.out.println("\nIngrese el segundo numero: ");
-                                segundoNum = scanner.nextDouble();
-
-                                System.out.println("La MULTIPLICACION es igual a:");
-                                System.out.println(calculadora.multiplicacion(primerNum,segundoNum));
-                                break;
-                            }
-                            case 4:{
-
-                                System.out.println("\nIngrese el primer numero: ");
-                                primerNum = scanner.nextDouble();
-                                System.out.println("\nIngrese el segundo numero: ");
-                                segundoNum = scanner.nextDouble();
-
-                                System.out.println("La DIVISION es igual a:");
-                                System.out.println(calculadora.division(primerNum,segundoNum));
-                                break;
-                            }
-                            case 5:{
-                                System.out.println("Saliendo...");
-                                break;
-                            }
-                            default: {
-                                System.out.println("Esa opcion no es valida.");
-                                break;
-                            }
-
-                        }
-
-                     }while(subOpcion != 5);
-         
+                     Calculadora calc = new Calculadora();
+                     calc.mostrarSubmenu();
                      break;
                 }
                 case 2:{
