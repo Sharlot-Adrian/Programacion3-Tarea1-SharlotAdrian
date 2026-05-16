@@ -30,7 +30,7 @@ public class CuentaVocales {
         String palabra = scanner.nextLine();
         System.out.println("*----------------------------------*");
 
-        System.out.println("La palabra tiene "+contarVocales(palabra) + "letras.");
+        System.out.println("La palabra tiene "+contarVocales(palabra) + " vocales.");
 
     }
 

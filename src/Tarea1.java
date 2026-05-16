@@ -47,7 +47,8 @@ public class Tarea1 {
                     break;
                 }
                 case 4:{
-                    System.out.println("Contador de vocales");
+                    CuentaVocales cv = new CuentaVocales();
+                    cv.mostarMenu();
                     break;
                 }
                 case 5:{
