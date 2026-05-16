@@ -6,24 +6,25 @@ public class Tarea1 {
 
         int opcion = 0;
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("\n------------------------------------------");
-        System.out.println("|                 Menu                    |");
-        System.out.println("|-----------------------------------------|");
-        System.out.println("| 1. Calculadora basica                   |");
-        System.out.println("| 2. Numero par o impar                   |");
-        System.out.println("| 3. Tabla de multiplicar                 |");
-        System.out.println("| 4. Contador de vocales                  |");
-        System.out.println("| 5. Promedio de notas                    |");
-        System.out.println("| 6. Clase estudiante                     |");
-        System.out.println("| 7. Cuenta bancaria                      |");
-        System.out.println("| 8. Herencia de Vehiculos                |");
-        System.out.println("| 9. Matriz 3x3                           |");
-        System.out.println("| 10. Sistema basico de inventario        |");
-        System.out.println("| 11. salir                               |");
-        System.out.println("|-----------------------------------------|");
-
+        
         do {
+
+            
+            System.out.println("\n------------------------------------------");
+            System.out.println("|                 Menu                    |");
+            System.out.println("|-----------------------------------------|");
+            System.out.println("| 1. Calculadora basica                   |");
+            System.out.println("| 2. Numero par o impar                   |");
+            System.out.println("| 3. Tabla de multiplicar                 |");
+            System.out.println("| 4. Contador de vocales                  |");
+            System.out.println("| 5. Promedio de notas                    |");
+            System.out.println("| 6. Clase estudiante                     |");
+            System.out.println("| 7. Cuenta bancaria                      |");
+            System.out.println("| 8. Herencia de Vehiculos                |");
+            System.out.println("| 9. Matriz 3x3                           |");
+            System.out.println("| 10. Sistema basico de inventario        |");
+            System.out.println("| 11. salir                               |");
+            System.out.println("|-----------------------------------------|");
 
             System.out.println("\nOpcion que desea seleccionar: ");
             opcion = scanner.nextInt();
