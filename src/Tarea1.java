@@ -84,6 +84,7 @@ public class Tarea1 {
         }while (opcion != 11);
 
         System.out.println("Gracias por usar el sistema.");
+        scanner.close();
 
     }
 }
