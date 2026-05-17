@@ -29,4 +29,6 @@ public class Motocicleta extends Vehiculo{
     public void acelerar(){
         System.out.println("La motocicleta esta movimiento.");
     }
+
+    
 }

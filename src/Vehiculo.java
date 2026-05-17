@@ -25,7 +25,7 @@ public abstract class Vehiculo {
         return year;
     }
 
-    public String color(){
+    public String getColor(){
         return color;
     }
 
@@ -46,8 +46,19 @@ public abstract class Vehiculo {
     }
 
     public void acelerar(){
-        
+
         System.out.println("El vehiculo esta en movimiento. ");
+    }
+
+    public void mostrarCaracteristicas(){
+        System.out.println("[CARACTERISTICAS DEL VEHICULO ]");
+        System.out.println("*----------------------------------*");
+        System.out.println("Modelo: " + getModelo());
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Year:  " + getYear());
+        System.out.println("Color: " + getColor());
+        System.out.println("*----------------------------------*");
+
     }
 
 }

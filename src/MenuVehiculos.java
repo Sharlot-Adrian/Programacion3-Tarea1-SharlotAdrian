@@ -50,11 +50,21 @@ public class MenuVehiculos {
                         break;
                     }
 
-                    case 2: { //Opciones para la motocicleta, cantidadNeumaticos y tipoMoto
+                    case 2: { //Opcion para la motocicleta, cantidadNeumaticos y tipoMoto
+
+                        System.out.println("Ingrese la cantidad de neumaticos: ");
+                        String cantNeumaticos = scanner.nextLine();
+
+                        System.out.println("Ingrese el tipo de motocicleta: ");
+                        String TipoMotocicleta = scanner.nextLine();
+
+                        Vehiculo moto = new Motocicleta(modelo, marca, year, color, cantNeumaticos, TipoMotocicleta);
+
                         break;
                     }
 
                     case 3: {
+                        System.out.println("Saliendo...");
                         break;
                     }
 
