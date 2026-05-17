@@ -1,12 +1,9 @@
 import java.util.LinkedList;
-
+import java.util.Scanner;
 public class InventarioSimple {
     
     LinkedList<Producto> lista = new LinkedList<Producto>();
-
-    public void agregarProducto(String nombre, int cantidad, double precio){
-        lista.add(new Producto(nombre, cantidad, precio));
-    }
+    Scanner scanner = new Scanner(System.in);
 
     public void mostrarProductos(){
 
@@ -16,7 +13,51 @@ public class InventarioSimple {
     }
 
     public void mostrarSubMenu(){
-        
+
+        int subOpcion = 0;
+        do{
+            System.out.println("\n[ CUENTA BANCARIA ]");
+            System.out.println("*----------------------------------*");
+            System.out.println("| 1. Agregar Producto              |");
+            System.out.println("| 2. Enlistar Productos            |");
+            System.out.println("| 3. Salir                         |");
+            System.out.println("*----------------------------------*");
+            System.out.println("\nIngresa la opcion que deseas seleccionar: ");
+            subOpcion = scanner.nextInt();
+            scanner.nextLine();
+
+            switch(subOpcion){
+
+                case 1:{
+                    System.out.println("\n[ AGREGAR PRODUCTO ]");
+                    System.out.println("Ingrese el nombre del producto: ");
+                    String nombre = scanner.nextLine();
+
+                    System.out.println("Ingrese la cantidad de producto que posee: ");
+                    int cantidad = scanner.nextInt();
+                    scanner.nextLine();
+
+                    System.out.println("Ingrese el precio del producto: ");
+                    double precio = scanner.nextDouble();
+
+                    lista.add(new Producto(nombre,cantidad,precio));
+
+                    break;
+                }
+                case 2:{
+                    break;
+                }
+                case 3:{
+                    break;
+                }
+                default:{
+                    System.out.println("Esa Opcion no es valida");
+                    break;
+                }
+
+            }
+
+        }while(subOpcion != 3);
     }
 }
 
