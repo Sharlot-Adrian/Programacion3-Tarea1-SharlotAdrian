@@ -1,4 +1,4 @@
-public class Carro extends Vehiculo {
+public class Carro extends Vehiculo { //Clase hija de Vehiculo para cumplir con el case #8 - Herencia de Vehiculos
     
     private String capacidadBaul;
     private int cantidadPuertas;

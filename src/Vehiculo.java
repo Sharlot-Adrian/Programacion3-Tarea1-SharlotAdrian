@@ -37,8 +37,8 @@ public abstract class Vehiculo { //Clase abstracta y padre para cumplir con el c
         this.marca = marca;
     }
 
-    public void setAño(int year){
-        this.año = year;
+    public void setAño(int año){
+        this.año = año;
     }
 
     public void setColor(String color){

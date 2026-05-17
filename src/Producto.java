@@ -1,4 +1,4 @@
-public class Producto {
+public class Producto { // Clase creada para cumplir con el case #10 - Inventario Simple
 
     private String nombre;
     private int cantidad;

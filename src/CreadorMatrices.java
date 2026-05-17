@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class CreadorMatrices {
+public class CreadorMatrices { //para el case #9 - Matriz 3x3
 
     static int [][] matriz = new int [3][3];
     static Scanner scanner = new Scanner(System.in);

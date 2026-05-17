@@ -1,4 +1,4 @@
-public class Motocicleta extends Vehiculo{
+public class Motocicleta extends Vehiculo{ //Clase hija de Vehiculo para cumplir con el case #8 - Herencia de Vehiculos
     
     private String cantidadNeumaticos;
     private String tipoMotocicleta;

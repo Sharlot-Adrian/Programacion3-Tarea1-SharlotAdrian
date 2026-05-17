@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 import java.util.Scanner;
-public class InventarioSimple {
+public class InventarioSimple { //Para el case #10 - Inventario simple
     
     LinkedList<Producto> lista = new LinkedList<Producto>();
     Scanner scanner = new Scanner(System.in);
