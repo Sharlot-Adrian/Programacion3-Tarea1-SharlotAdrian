@@ -5,12 +5,6 @@ public class InventarioSimple {
     LinkedList<Producto> lista = new LinkedList<Producto>();
     Scanner scanner = new Scanner(System.in);
 
-    public void mostrarProductos(){
-
-        for (int i = 0; i < lista.size(); i++){
-            lista.get(i).mostrarDetalles();
-        }
-    }
 
     public void mostrarSubMenu(){
 
@@ -45,6 +39,10 @@ public class InventarioSimple {
                     break;
                 }
                 case 2:{
+                    for (int i = 0; i < lista.size(); i++){
+                    lista.get(i).mostrarDetalles();
+                    }
+                    
                     break;
                 }
                 case 3:{

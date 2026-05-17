@@ -6,6 +6,9 @@ public class Producto {
 
 
     public Producto(String nombre, int cantidad, double precio){
+        setNombre(nombre);
+        setCantidad(cantidad);
+        setPrecio(precio);
 
     }
 
@@ -34,7 +37,7 @@ public class Producto {
     }
 
     public void mostrarDetalles(){
-        
+
         System.out.println("\n[PRODUCTO:  " + getNombre() + "]" );
         System.out.println("*----------------------------------*");
         System.out.println("CANTIDAD EN ALMACEN: " + getCantidad() );

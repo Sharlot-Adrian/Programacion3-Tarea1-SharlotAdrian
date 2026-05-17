@@ -68,7 +68,8 @@ public class Tarea1 {
                     break;
                 }
                 case 10:{
-                    System.out.println("Sistema basico de inventario");
+                    InventarioSimple inventario = new InventarioSimple();
+                    inventario.mostrarSubMenu();
                     break;
                 }
                 case 11:{
