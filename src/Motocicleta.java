@@ -30,5 +30,19 @@ public class Motocicleta extends Vehiculo{
         System.out.println("La motocicleta esta movimiento.");
     }
 
+     @Override
+    public void mostrarCaracteristicas(){
+        System.out.println("[CARACTERISTICAS DE LA MOTOCICLETA ]");
+        System.out.println("*----------------------------------*");
+        System.out.println("Modelo: " + getModelo());
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Year:  " + getYear());
+        System.out.println("Color: " + getColor());
+        System.out.println("Tipo de motocicleta: " + getTipoMotocicleta());
+        System.out.println("Cantidad de neumaticos: " + getCantidadNeumaticos());
+        System.out.println("*----------------------------------*");
+
+    }
+
     
 }
