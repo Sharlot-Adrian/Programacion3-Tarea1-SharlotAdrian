@@ -1,4 +1,4 @@
-public abstract class Vehiculo {
+public abstract class Vehiculo { //Clase abstracta y padre para cumplir con el case #8 - Herencia de Vehiculos
 
     private String modelo;
     private String marca;

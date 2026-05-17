@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Estudiante {
+public class Estudiante { //Para el case #6 - Clase estudiante
     
     private String nombre;
     private String apellido;

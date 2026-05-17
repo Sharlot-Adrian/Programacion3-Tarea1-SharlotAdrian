@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class CuentaVocales {
+public class CuentaVocales { //Para el case #4 - Contador de vocales
 
     static Scanner scanner = new Scanner(System.in);
 

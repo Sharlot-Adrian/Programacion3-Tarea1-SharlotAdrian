@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ParOImpar {
+public class ParOImpar { //Para el case #2 - Numero par o Impar
 
     static Scanner scanner = new Scanner(System.in);
 

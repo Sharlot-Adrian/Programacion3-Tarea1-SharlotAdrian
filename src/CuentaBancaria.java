@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class CuentaBancaria {
+public class CuentaBancaria { //Para el case #7 - Cuenta bancaria
 
     private double saldo;
     private String titular;

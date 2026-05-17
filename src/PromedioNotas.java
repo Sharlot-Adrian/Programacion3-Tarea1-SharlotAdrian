@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class PromedioNotas {
+public class PromedioNotas { //Para el case #5 - promedio de notas
 
     static Scanner scanner = new Scanner (System.in);
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calculadora {
+public class Calculadora { //Para el case #1 - Calculadora basica
 
     static Scanner scanner1 = new Scanner(System.in);
 
@@ -25,7 +25,7 @@ public class Calculadora {
         return primerNum/segundoNum;
     }
 
-    public static void mostrarSubmenu(){
+    public static void mostrarSubmenu(){ //Se le llama subMenu porque incluye un do-while
         int subOpcion = 0;
         double primerNum = 0; 
         double segundoNum = 0;

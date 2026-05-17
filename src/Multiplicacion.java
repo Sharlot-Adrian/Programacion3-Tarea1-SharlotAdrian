@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Multiplicacion {
+public class Multiplicacion { //Para el case #3 - Tabla de multiplicar
     
     static Scanner scanner = new Scanner(System.in);
 
