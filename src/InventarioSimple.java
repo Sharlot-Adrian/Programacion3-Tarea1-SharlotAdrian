@@ -10,7 +10,7 @@ public class InventarioSimple {
 
         int subOpcion = 0;
         do{
-            System.out.println("\n[ CUENTA BANCARIA ]");
+            System.out.println("\n[ INVENTARIO SIMPLE ]");
             System.out.println("*----------------------------------*");
             System.out.println("| 1. Agregar Producto              |");
             System.out.println("| 2. Enlistar Productos            |");
@@ -24,10 +24,11 @@ public class InventarioSimple {
 
                 case 1:{
                     System.out.println("\n[ AGREGAR PRODUCTO ]");
+                    System.out.println("*----------------------------------*");
                     System.out.println("Ingrese el nombre del producto: ");
                     String nombre = scanner.nextLine();
 
-                    System.out.println("Ingrese la cantidad de producto que posee: ");
+                    System.out.println("Ingrese la cantidad de producto que posee en disponibilidad: ");
                     int cantidad = scanner.nextInt();
                     scanner.nextLine();
 
@@ -35,6 +36,10 @@ public class InventarioSimple {
                     double precio = scanner.nextDouble();
 
                     lista.add(new Producto(nombre,cantidad,precio));
+                    System.out.println("*----------------------------------*");
+
+                    System.out.println("Producto agregado!");
+                    System.out.println("*----------------------------------*");
 
                     break;
                 }

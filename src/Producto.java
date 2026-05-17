@@ -40,8 +40,8 @@ public class Producto {
 
         System.out.println("\n[PRODUCTO:  " + getNombre() + "]" );
         System.out.println("*----------------------------------*");
-        System.out.println("CANTIDAD EN ALMACEN: " + getCantidad() );
-        System.out.println("PRECIO: " + getPrecio() );
+        System.out.println("CANTIDAD EN ALMACEN: " + getCantidad() + " unidades." );
+        System.out.println("PRECIO: " + getPrecio() + " pesos." );
         System.out.println("*----------------------------------*");
 
     }
