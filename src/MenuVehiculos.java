@@ -30,7 +30,7 @@ public class MenuVehiculos {
                 System.out.println("Digite una marca: ");
                 String marca = scanner.nextLine();
 
-                System.out.println("Digite un year de fabricacion: ");
+                System.out.println("Digite un año de fabricacion: ");
                 int year = scanner.nextInt();
 
                 scanner.nextLine();
