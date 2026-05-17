@@ -31,7 +31,6 @@ public class Tarea1 {
             switch(opcion){
 
                 case 1:{
-
                     Calculadora.mostrarSubmenu();
                     break;
                 }
