@@ -32,8 +32,7 @@ public class Tarea1 {
 
                 case 1:{
 
-                    Calculadora calc = new Calculadora();
-                    calc.mostrarSubmenu();
+                    Calculadora.mostrarSubmenu();
                     break;
                 }
                 case 2:{

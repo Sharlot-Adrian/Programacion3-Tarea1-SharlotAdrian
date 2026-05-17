@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculadora {
 
-    Scanner scanner1 = new Scanner(System.in);
+    static Scanner scanner1 = new Scanner(System.in);
 
     public double suma(double primerNum, double segundoNum){
         return primerNum + segundoNum;
@@ -25,7 +25,7 @@ public class Calculadora {
         return primerNum/segundoNum;
     }
 
-    public void mostrarSubmenu(){
+    public static void mostrarSubmenu(){
         int subOpcion = 0;
         double primerNum = 0; 
         double segundoNum = 0;
