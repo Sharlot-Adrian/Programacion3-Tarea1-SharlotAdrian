@@ -14,7 +14,7 @@ public class Motocicleta extends Vehiculo{
     }
 
     public String getTipoMotocicleta(){
-        return cantidadNeumaticos;
+        return tipoMotocicleta;
     }
 
     public void setCantidadNeumaticos(String cantidadNeumaticos){
