@@ -12,16 +12,16 @@ public class MenuVehiculos {
             System.out.println("*-----------------------------------*");
             System.out.println("|                Menu               |");
             System.out.println("|-----------------------------------|");
-            System.out.println("|1. Crear un vehiculo tipo carro    |");
+            System.out.println("|1. Crear Vehiculo tipo carro       |");
             System.out.println("|2. Crear Vehiculo tipo motocicleta |");
             System.out.println("|3. Salir                           |");
-            System.out.println("*----------------------------------*");
+            System.out.println("*-----------------------------------*");
             System.out.println("\nDigite la opcion que desea seleccionar: ");
 
             subOpcion = scanner.nextInt();
 
             if (subOpcion != 3) {
-                System.out.println("[CREACION DE UN VEHICULO]"); // Atributos: modelo, marca, year, color
+                System.out.println("[CREACION DE UN VEHICULO]"); // Atributos del vehiculo : modelo, marca, year, color
                 System.out.println("*----------------------------------*");
                 System.out.println("Digite un modelo: ");
                 String modelo = scanner.nextLine();
@@ -46,7 +46,9 @@ public class MenuVehiculos {
                         int cantPuertas = scanner.nextInt();
 
                         Vehiculo carro = new Carro(modelo, marca, year, color, capacidadBaul, cantPuertas);
-                  
+                        carro.mostrarCaracteristicas();
+                        System.out.println("\n");
+                        carro.acelerar();
                         break;
                     }
 
@@ -59,7 +61,9 @@ public class MenuVehiculos {
                         String TipoMotocicleta = scanner.nextLine();
 
                         Vehiculo moto = new Motocicleta(modelo, marca, year, color, cantNeumaticos, TipoMotocicleta);
-
+                        moto.mostrarCaracteristicas();
+                        System.out.println("\n");
+                        moto.acelerar();
                         break;
                     }
 

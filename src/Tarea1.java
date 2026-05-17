@@ -59,7 +59,7 @@ public class Tarea1 {
                     break;
                 }
                 case 8:{
-                    System.out.println("Herencia de vehiculos");
+                    MenuVehiculos.MostrarSubMenu();
                     break;
                 }
                 case 9:{
