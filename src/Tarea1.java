@@ -58,7 +58,8 @@ public class Tarea1 {
                     break;
                 }
                 case 6:{
-                    System.out.println("Clase estudiante");
+                    
+                    Estudiante.crearEstudiante();
                     break;
                 }
                 case 7:{
@@ -70,8 +71,8 @@ public class Tarea1 {
                     break;
                 }
                 case 9:{
-                    CreadorMatrices creadorM = new CreadorMatrices();
-                    creadorM.mostrarMenu();
+                    CreadorMatrices creadorMat = new CreadorMatrices();
+                    creadorMat.mostrarMenu();
                     break;
                 }
                 case 10:{
