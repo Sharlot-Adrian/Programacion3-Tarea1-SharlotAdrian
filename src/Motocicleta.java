@@ -1,0 +1,30 @@
+public class Motocicleta extends Vehiculo{
+    
+    private String cantidadNeumaticos;
+    private String tipoMotocicleta;
+
+    public Motocicleta(String modelo,String marca, int year, String color, String cantidadNeumaticos, String tipoMotocicleta){
+        super(modelo,marca,year,color);
+    }
+
+    public String getCantidadNeumaticos(){
+        return cantidadNeumaticos;
+    }
+
+    public String getTipoMotocicleta(){
+        return cantidadNeumaticos;
+    }
+
+    public void setCantidadNeumaticos(String cantidadNeumaticos){
+        this.cantidadNeumaticos = cantidadNeumaticos;
+    }
+
+    public void setTipoMotocicleta (String tipoMotocicleta){
+        this.tipoMotocicleta = tipoMotocicleta;
+    }
+
+    @Override
+    public void acelerar(){
+        System.out.println("La motocicleta esta movimiento.");
+    }
+}
