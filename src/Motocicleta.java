@@ -3,8 +3,8 @@ public class Motocicleta extends Vehiculo{ //Clase hija de Vehiculo para cumplir
     private String cantidadNeumaticos;
     private String tipoMotocicleta;
 
-    public Motocicleta(String modelo,String marca, int año, String color, String cantidadNeumaticos, String tipoMotocicleta){
-        super(modelo,marca,año,color);
+    public Motocicleta(String modelo,String marca, int year, String color, String cantidadNeumaticos, String tipoMotocicleta){
+        super(modelo,marca,year,color);
         setCantidadNeumaticos(cantidadNeumaticos);
         setTipoMotocicleta(tipoMotocicleta);
     }
@@ -36,7 +36,7 @@ public class Motocicleta extends Vehiculo{ //Clase hija de Vehiculo para cumplir
         System.out.println("*----------------------------------*");
         System.out.println("Modelo: " + getModelo());
         System.out.println("Marca: " + getMarca());
-        System.out.println("Año:  " + getAño());
+        System.out.println("Año:  " + getYear());
         System.out.println("Color: " + getColor());
         System.out.println("Tipo de motocicleta: " + getTipoMotocicleta());
         System.out.println("Cantidad de neumaticos: " + getCantidadNeumaticos());
