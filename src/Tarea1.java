@@ -35,28 +35,22 @@ public class Tarea1 {
                     break;
                 }
                 case 2:{
-                    ParOImpar determinandoPar = new ParOImpar();
-                    determinandoPar.mostrarMenu();
+                    ParOImpar.mostrarMenu();
                     break;
                 }
                 case 3:{
-                    Multiplicacion multi = new Multiplicacion();
-                    multi.mostrarMenu();
+                    Multiplicacion.mostrarMenu();
                     break;
                 }
                 case 4:{
-                    CuentaVocales cv = new CuentaVocales();
-                    cv.mostrarMenu();
+                    CuentaVocales.mostrarMenu();
                     break;
                 }
                 case 5:{
-                    System.out.println("Promedio de notas");
-                    PromedioNotas promNotas = new PromedioNotas();
-                    promNotas.mostrarMenu();
+                    PromedioNotas.mostrarMenu();
                     break;
                 }
-                case 6:{
-                    
+                case 6:{ 
                     Estudiante.crearEstudiante();
                     break;
                 }
@@ -69,8 +63,7 @@ public class Tarea1 {
                     break;
                 }
                 case 9:{
-                    CreadorMatrices creadorMat = new CreadorMatrices();
-                    creadorMat.mostrarMenu();
+                    CreadorMatrices.mostrarMenu();
                     break;
                 }
                 case 10:{

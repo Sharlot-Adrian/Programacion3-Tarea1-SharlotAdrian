@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class PromedioNotas {
 
-    Scanner scanner = new Scanner (System.in);
+    static Scanner scanner = new Scanner (System.in);
 
 
-    private double obtenerPromedio (int cantidadNotasPublicadas){
+    private static double obtenerPromedio (int cantidadNotasPublicadas){
 
         int sumatoria = 0;
         int nota = 0;
@@ -23,7 +23,7 @@ public class PromedioNotas {
 
     }
 
-    public void mostrarMenu(){
+    public static void mostrarMenu(){
 
         int cantidadNotasPublicadas = 0;
         System.out.println("\n[ PROMEDIO DE NOTAS ]");

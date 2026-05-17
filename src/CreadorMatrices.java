@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class CreadorMatrices {
 
-    int [][] matriz = new int [3][3];
-    Scanner scanner = new Scanner(System.in);
+    static int [][] matriz = new int [3][3];
+    static Scanner scanner = new Scanner(System.in);
 
-    private void crearMatriz3x3(){
+    private static void crearMatriz3x3(){
 
         for (int i = 0; i < 3; i++){
             for (int j = 0; j < 3; j++){
@@ -16,7 +16,7 @@ public class CreadorMatrices {
         }
     }
 
-    private void mostrarMatriz(){
+    private static void mostrarMatriz(){
         for (int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
                 System.out.print(matriz[i][j] + " ");
@@ -25,7 +25,7 @@ public class CreadorMatrices {
         }
     }
 
-    public void mostrarMenu(){
+    public static void mostrarMenu(){
         System.out.println("[ MATRIZ 3X3 ]");
         System.out.println("*----------------------------------*");
         crearMatriz3x3();

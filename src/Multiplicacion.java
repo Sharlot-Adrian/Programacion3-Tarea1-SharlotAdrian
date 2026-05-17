@@ -2,21 +2,16 @@ import java.util.Scanner;
 
 public class Multiplicacion {
     
-    //private int numero;
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
-    /*public Multiplicacion( int numero ){
-        this.numero = numero;
-    }*/
-
-    public void tablasHasta10(int numero){
+    public static void tablasHasta10(int numero){
 
         for (int i = 1; i <=10; i++){
             System.out.printf("\n%d * %d = %d", i, numero, i * numero);
         }
     }
 
-    public void mostrarMenu(){
+    public static void mostrarMenu(){
 
         
         System.out.println("\n[ TABLA DE MULTIPLICAR ]");

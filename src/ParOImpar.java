@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class ParOImpar {
 
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
-    private boolean EsPar(int numero) {
+    private static boolean EsPar(int numero) {
         return (numero % 2 == 0 ? true : false);
     }
 
-    public void mostrarMenu() {
-        
+    public static void mostrarMenu() {
+
         System.out.println("\n[ Numero par o impar ]");
         System.out.println("*----------------------------------*");
         System.out.println("Ingrese un numero: ");

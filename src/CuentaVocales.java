@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class CuentaVocales {
 
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
-    private int contarVocales(String palabra){
+    private static int contarVocales(String palabra){
 
         palabra = palabra.toUpperCase();
         char [] letras = palabra.toCharArray();
@@ -22,7 +22,7 @@ public class CuentaVocales {
 
     }
 
-    public void mostrarMenu(){
+    public static void mostrarMenu(){
 
         System.out.println("\n [CONTAR VOCALES]");
         System.out.println("*----------------------------------*");
