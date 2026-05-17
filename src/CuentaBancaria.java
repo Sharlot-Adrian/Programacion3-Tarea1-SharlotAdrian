@@ -48,7 +48,7 @@ public class CuentaBancaria {
     private void depositar(double monto) {
 
         if (monto >= 0) {
-            System.out.println("Usted ha depositado: " + monto + "pesos en su cuenta.");
+            System.out.println("Usted ha depositado: " + monto + " pesos en su cuenta.");
             this.saldo += monto;
         } else
             System.out.println("La operacion no es valida. No puede agregar un monto negativo. ");
@@ -57,37 +57,40 @@ public class CuentaBancaria {
 
     private void retirar(double monto) {
 
-        if (monto > getSaldo())
-            System.out.println(
-                    "La operacion no es valida. No puede retirar un monto mayor al que se encuentra en su cuenta.");
-        else
+        if (monto > this.saldo)
+            System.out.println("La operacion no es valida. No puede retirar un monto mayor al que se encuentra en su cuenta.");
+        else {
             this.saldo -= monto;
+            System.out.println("Usted ha retirado: " + monto + " pesos de su cuenta.");
+        }
 
     }
 
     public void mostrarSubMenu() { // Es un subMenu al tener un do-while
 
         int subOpcion = 0;
-        boolean cuentaExiste = false;
+        CuentaBancaria cuenta = null;
         do {
 
-            System.out.println("[ CUENTA BANCARIA ]");
+            System.out.println("\n[ CUENTA BANCARIA ]");
             System.out.println("*----------------------------------*");
-            System.out.println("| 1. Depositar dinero              |");
-            System.out.println("| 2. Retirar dinero                |");
-            System.out.println("| 3. Salir                         |");
+            System.out.println("| 1. Crear cuenta                  |");
+            System.out.println("| 2. Depositar dinero              |");
+            System.out.println("| 3. Retirar dinero                |");
+            System.out.println("| 4. Informacion de la cuenta      |");
+            System.out.println("| 5. Salir                         |");
             System.out.println("*----------------------------------*");
             System.out.println("\nIngresa la opcion que deseas seleccionar: ");
             subOpcion = scanner.nextInt();
+            scanner.nextLine();
 
-            if (subOpcion != 4) {
-                /*
-                 Atributos de una cuenta:
-                 String titular, double saldo, String idCuenta
-                 */
+            // Atributos de una cuenta: String titular, double saldo, String idCuenta
 
-                if (cuentaExiste == false) { // Crear cuenta si no existe
-                    System.out.println("Ingrese su nombre: ");
+            switch (subOpcion) {
+
+                case 1: {
+                    System.out.println("\n [ CREAR CUENTA ]");
+                    System.out.println("Ingrese su nombre completo: ");
                     String nombreTitular = scanner.nextLine();
 
                     System.out.println("Ingrese un saldo inicial: ");
@@ -95,42 +98,72 @@ public class CuentaBancaria {
 
                     scanner.nextLine();
 
-                    int idRandom = random.nextInt(100000, 100000);
+                    int idRandom = random.nextInt(100000, 700001);
                     System.out.println("El ID (seis digitos) de su cuenta es:  " + idRandom);
 
-                    CuentaBancaria cuenta = new CuentaBancaria(nombreTitular, saldoInicial, idRandom);
-                    cuentaExiste = true;
+                    cuenta = new CuentaBancaria(nombreTitular, saldoInicial, idRandom);
+                    break;
                 }
-                else
-                    System.out.println("La cuenta ya existe.");
 
-                switch (subOpcion) {
-                    case 1: {
+                case 2: {
 
-                        System.out.println("\n Digite el monto que desea depositar: ");
-                        depositar(subOpcion);
+                    if (cuenta == null) {
+                        System.out.println("Tu cuenta no existe todavia. ");
+                        break;
+                    } else {
+                        System.out.println("\n [ DEPOSITAR ]");
+                        System.out.println("Digite el monto que desea depositar: ");
+                        int montoDeposito = scanner.nextInt();
+                        cuenta.depositar(montoDeposito);
 
-                        System.out.println("El saldo actual de su cuenta es: " + getSaldo());
+                        System.out.println("El saldo actual de su cuenta es: " + cuenta.getSaldo());
                         break;
                     }
-                    case 2: {
-                        break;
+                }
+                case 3: {
+                    if (cuenta == null){
+                       System.out.println("Tu cuenta no existe todavia. ");
+                       break; 
                     }
-                    case 3: {
-                        break;
+                    else {
+                        System.out.println("\n [RETIRAR] ");
+                        System.out.println("Digite el monto que desea retirar: ");
+                        int montoRetiro = scanner.nextInt();
+                        cuenta.retirar(montoRetiro);
 
+                        System.out.println("El saldo actual de su cuenta es: " + cuenta.getSaldo());
+
+                        break;
                     }
-             
-                    default: {
-                        System.out.println("Esta opcion no es valida.");
+                }
+                case 4: {
+                    if (cuenta == null){
+                        System.out.println("Tu cuenta no existe todavia.");
+                        break;
+                    }
+                    else {
+                        System.out.println("\n [INFORMACION DE LA CUENTA]");
+                        System.out.println("TITULAR: " + cuenta.getTitular());
+                        System.out.println("ID. CUENTA: " + cuenta.getIdCuenta());
+                        System.out.println("SALDO ACTUAL: " + cuenta.getSaldo());
                         break;
                     }
 
+                }
+
+                case 5:{
+                    System.out.println("\nSaliendo...");
+                    break;
+                }
+
+                default: {
+                    System.out.println("Esta opcion no es valida.");
+                    break;
                 }
 
             }
 
-        } while (subOpcion != 4);
+        } while (subOpcion != 5);
 
     }
 }

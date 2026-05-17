@@ -55,7 +55,8 @@ public class Tarea1 {
                     break;
                 }
                 case 7:{
-                    System.out.println("Cuenta bancaria");
+                    CuentaBancaria cuenta = new CuentaBancaria();
+                    cuenta.mostrarSubMenu();
                     break;
                 }
                 case 8:{
