@@ -19,6 +19,7 @@ public class MenuVehiculos {
             System.out.println("\nDigite la opcion que desea seleccionar: ");
 
             subOpcion = scanner.nextInt();
+            scanner.nextLine();
 
             if (subOpcion != 3) {
                 System.out.println("[CREACION DE UN VEHICULO]"); // Atributos del vehiculo : modelo, marca, year, color

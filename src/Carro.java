@@ -5,6 +5,8 @@ public class Carro extends Vehiculo {
 
     public Carro(String modelo, String marca, int year, String color, String capacidadBaul, int cantidadPuertas){
         super(modelo, marca,year,color);
+        setCapacidadBaul(capacidadBaul);
+        setCantidadPuertas(cantidadPuertas);
 
     }
 
