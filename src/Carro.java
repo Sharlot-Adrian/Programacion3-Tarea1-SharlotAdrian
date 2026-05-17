@@ -3,8 +3,8 @@ public class Carro extends Vehiculo {
     private String capacidadBaul;
     private int cantidadPuertas;
 
-    public Carro(String modelo, String marca, int year, String color, String capacidadBaul, int cantidadPuertas){
-        super(modelo, marca,year,color);
+    public Carro(String modelo, String marca, int año, String color, String capacidadBaul, int cantidadPuertas){
+        super(modelo, marca,año,color);
         setCapacidadBaul(capacidadBaul);
         setCantidadPuertas(cantidadPuertas);
 
@@ -37,7 +37,7 @@ public class Carro extends Vehiculo {
         System.out.println("*----------------------------------*");
         System.out.println("Modelo: " + getModelo());
         System.out.println("Marca: " + getMarca());
-        System.out.println("Year:  " + getYear());
+        System.out.println("Year:  " + getAño());
         System.out.println("Color: " + getColor());
         System.out.println("Capacidad de baul: " + getCapacidadBaul());
         System.out.println("Cantidad de puertas: " + getCantidadPuertas());
