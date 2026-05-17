@@ -5,6 +5,8 @@ public class Motocicleta extends Vehiculo{
 
     public Motocicleta(String modelo,String marca, int year, String color, String cantidadNeumaticos, String tipoMotocicleta){
         super(modelo,marca,year,color);
+        setCantidadNeumaticos(cantidadNeumaticos);
+        setTipoMotocicleta(tipoMotocicleta);
     }
 
     public String getCantidadNeumaticos(){
