@@ -2,14 +2,14 @@ public abstract class Vehiculo { //Clase abstracta y padre para cumplir con el c
 
     private String modelo;
     private String marca;
-    private int year;
+    private int año;
     private String color;
 
 
-    public Vehiculo(String modelo, String marca, int year, String color){
+    public Vehiculo(String modelo, String marca, int año, String color){
         setModelo(modelo);
         setMarca(marca);
-        setYear(year);
+        setAño(año);
         setColor(color);
     }
 
@@ -21,8 +21,8 @@ public abstract class Vehiculo { //Clase abstracta y padre para cumplir con el c
         return marca;
     }
 
-    public int getYear(){
-        return year;
+    public int getAño(){
+        return año;
     }
 
     public String getColor(){
@@ -37,8 +37,8 @@ public abstract class Vehiculo { //Clase abstracta y padre para cumplir con el c
         this.marca = marca;
     }
 
-    public void setYear(int year){
-        this.year = year;
+    public void setAño(int year){
+        this.año = year;
     }
 
     public void setColor(String color){
@@ -55,7 +55,7 @@ public abstract class Vehiculo { //Clase abstracta y padre para cumplir con el c
         System.out.println("*----------------------------------*");
         System.out.println("Modelo: " + getModelo());
         System.out.println("Marca: " + getMarca());
-        System.out.println("Year:  " + getYear());
+        System.out.println("Año:  " + getAño());
         System.out.println("Color: " + getColor());
         System.out.println("*----------------------------------*");
 
